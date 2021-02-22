@@ -12,13 +12,29 @@ function App() {
     });
   }
 
+  function deleteCred(id) {
+    setCred((prevCreds) => {
+      return prevCreds.filter((cred, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div>
       <Header />
       <InputTextArea onAdd={addCred} />
       <div className="flexbox">
         {allCreds.map((cred, index) => {
-          return <Card key={index} name={cred.accName} pass={cred.pass} />;
+          return (
+            <Card
+              key={index}
+              id={index}
+              name={cred.accName}
+              pass={cred.pass}
+              onDelete={deleteCred}
+            />
+          );
         })}
       </div>
     </div>
