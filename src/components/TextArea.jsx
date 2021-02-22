@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Fab from "@material-ui/core/Fab";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
+import EnhancedEncryptionIcon from "@material-ui/icons/EnhancedEncryption";
 
 function InputTextArea(props) {
   const [credit, setCredit] = useState({
@@ -6,12 +10,16 @@ function InputTextArea(props) {
     pass: "",
   });
 
+  const [icon, setIcon] = useState(false);
+
   function toggleP() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
       x.type = "text";
+      setIcon(true);
     } else {
       x.type = "password";
+      setIcon(false);
     }
   }
 
@@ -54,11 +62,13 @@ function InputTextArea(props) {
             onChange={handleChange}
             value={credit.pass}
           />
-          <div style={{ cursor: "pointer" }} onClick={toggleP}>
-            Show
+          <div className="eye" style={{ cursor: "pointer" }} onClick={toggleP}>
+            {icon ? <VisibilityOffIcon /> : <VisibilityIcon />}
           </div>
         </div>
-        <button onClick={submitCred}>Add</button>
+        <Fab onClick={submitCred}>
+          <EnhancedEncryptionIcon />
+        </Fab>
       </form>
     </div>
   );

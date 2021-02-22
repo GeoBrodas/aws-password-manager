@@ -9,6 +9,8 @@ body {
 }
 
 header {
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
   color: #ccf2f4;
   background-color: #514078;
   margin: auto -16px;
@@ -32,23 +34,27 @@ form.create-note input {
   padding: 4px;
   outline: none;
   font-size: 1.2em;
-  font-family: inherit;
+  font-family: "Balsamiq Sans", cursive;
   resize: none;
 }
 
 form.create-note button {
   position: absolute;
-  right: 18px;
+  right: 130px;
   bottom: -18px;
   background: #514078;
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.eye {
+  color: #514078;
 }
 
 .flexbox {
@@ -57,6 +63,7 @@ form.create-note button {
 }
 
 .note {
+  font-family: "Balsamiq Sans", cursive;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
