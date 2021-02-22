@@ -18,6 +18,7 @@ function App() {
         return index !== id;
       });
     });
+    //console.log(allCreds);
   }
 
   return (
