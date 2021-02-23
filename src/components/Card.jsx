@@ -4,7 +4,7 @@ import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 
 function Card(props) {
   function removeCard() {
-    props.onDelete(props.id);
+    props.onDelete(props.mid, props.id);
   }
 
   return (
