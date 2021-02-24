@@ -18,6 +18,16 @@ header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+.disclaimer {
+  font-family: "Balsamiq Sans", cursive;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  font-style: italic;
+  color: #62959c;
+}
+
 form.create-note {
   position: relative;
   width: 20rem;
@@ -85,7 +95,7 @@ form.create-note button {
 
 .note button {
   position: relative;
-  float: right;
+  float: left;
   margin-right: 10px;
   color: #514078;
   border: none;
