@@ -19,6 +19,7 @@ header {
 }
 
 .disclaimer {
+  padding-left: 20px;
   font-family: "Balsamiq Sans", cursive;
   display: flex;
   justify-content: center;

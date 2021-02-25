@@ -48,7 +48,7 @@ function App() {
             : cred;
         })
       );
-      console.log(response.data + " " + id);
+      //console.log(response.data + " " + id);
     });
   }
 
@@ -56,7 +56,7 @@ function App() {
     <div>
       <Header />
       <p className="disclaimer">
-        Please refresh this page after adding/deleting your password
+        Refresh this page after adding/viewing/deleting your password
       </p>
       <InputTextArea onAdd={addCred} />
       <div className="flexbox">
