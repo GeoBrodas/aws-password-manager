@@ -6,6 +6,7 @@
 
 body {
   background-color: #ccf2f4;
+  background-image: url("gplay.png");
 }
 
 header {
@@ -45,7 +46,7 @@ form.create-note input {
   padding: 4px;
   outline: none;
   font-size: 1.2em;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Nunito", sans-serif;
   resize: none;
 }
 
@@ -74,7 +75,7 @@ form.create-note button {
 }
 
 .note {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Nunito", sans-serif;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
