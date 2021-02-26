@@ -5,7 +5,7 @@ const hashnode = "http://geobrodas.hashnode.dev";
 function Footer() {
   return (
     <div className="footer">
-      <p>Built by Georgey</p>
+      <p>App by Georgey</p>
       <p>
         Follow On{" "}
         <strong>
