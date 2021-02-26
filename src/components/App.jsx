@@ -3,6 +3,7 @@ import Axios from "axios";
 import Header from "./header";
 import InputTextArea from "./TextArea";
 import Card from "./Card";
+import Footer from "./Footer";
 
 function App() {
   const [allCreds, setCred] = useState([]);
@@ -59,6 +60,7 @@ function App() {
         Refresh this page after adding/viewing/deleting your password
       </p>
       <InputTextArea onAdd={addCred} />
+
       <div className="flexbox">
         {allCreds.map((cred, index) => {
           return (
@@ -74,6 +76,7 @@ function App() {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 }
