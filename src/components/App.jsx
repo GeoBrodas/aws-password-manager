@@ -9,9 +9,11 @@ function App() {
   const [allCreds, setCred] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/read").then((response) => {
-      setCred(response.data);
-    });
+    Axios.get("https://enigmatic-beyond-54549.herokuapp.com/read").then(
+      (response) => {
+        setCred(response.data);
+      }
+    );
   }, []);
 
   function addCred(newCred) {
@@ -19,7 +21,7 @@ function App() {
       return [...prevCreds, newCred];
     });
 
-    Axios.post("http://localhost:3001/insert", {
+    Axios.post("https://enigmatic-beyond-54549.herokuapp.com/insert", {
       accName: newCred.accName,
       pass: newCred.pass,
     });
@@ -32,11 +34,11 @@ function App() {
       });
     });
     //console.log(mid);
-    Axios.delete(`http://localhost:3001/delete/${mid}`); //use back-tickssss--importantttt!!!!1
+    Axios.delete(`https://enigmatic-beyond-54549.herokuapp.com/delete/${mid}`); //use back-tickssss--importantttt!!!!1
   }
 
   function getPassword(password, id) {
-    Axios.post("http://localhost:3001/showpassword", {
+    Axios.post("https://enigmatic-beyond-54549.herokuapp.com/showpassword", {
       password: password,
     }).then((response) => {
       setCred(
