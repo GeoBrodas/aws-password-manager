@@ -61,6 +61,7 @@ function App() {
       <p className="disclaimer">
         Refresh this page after adding/viewing/deleting your password
       </p>
+      <Footer />
       <InputTextArea onAdd={addCred} />
 
       <div className="flexbox">
@@ -78,7 +79,6 @@ function App() {
           );
         })}
       </div>
-      <Footer />
     </div>
   );
 }

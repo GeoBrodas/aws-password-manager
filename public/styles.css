@@ -20,6 +20,7 @@ header {
 }
 
 .disclaimer {
+  text-align: center;
   padding-left: 20px;
   font-family: "Balsamiq Sans", cursive;
   display: flex;
@@ -108,24 +109,18 @@ form.create-note button {
   outline: none;
 }
 
-footer {
+.footer {
   font-family: "Nunito", sans-serif;
-  /* display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 100%; */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   text-align: center;
+  position: relative;
+  top: 15px;
 }
 
-footer p {
+.footer p {
   margin: 0 auto;
   color: #514078;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
 }
