@@ -52,6 +52,7 @@ function InputTextArea(props) {
           placeholder="Account Name"
           onChange={handleChange}
           value={credit.accName}
+          required
         />
         <div style={{ display: "flex" }}>
           <input
@@ -61,6 +62,7 @@ function InputTextArea(props) {
             id="myInput"
             onChange={handleChange}
             value={credit.pass}
+            required
           />
           <div className="eye" style={{ cursor: "pointer" }} onClick={toggleP}>
             {icon ? <VisibilityOffIcon /> : <VisibilityIcon />}
